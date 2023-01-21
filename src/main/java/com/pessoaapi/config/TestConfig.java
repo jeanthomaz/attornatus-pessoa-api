@@ -40,8 +40,8 @@ public class TestConfig implements CommandLineRunner {
 
         pessoaRepository.saveAll(Arrays.asList(p,p1,p2,p3,p4,p5,p6,p7,p8,p9));
 
-//        EnderecoEntity e = new EnderecoEntity(null,p.getIdPessoa(), "Rua Anita Garibaldi", 27777777, 300, "Resende", TipoEndereco.PRINCIPAL, p);
-//        EnderecoEntity e1 = new EnderecoEntity(null,p.getIdPessoa(), "Avenida Nova Resende", 28888888, 100, "Resende", TipoEndereco.PRINCIPAL, p);
+//        EnderecoEntity e = new EnderecoEntity(null,p.getIdPessoa(), "Rua Anita Garibaldi", "27777777", 300, "Resende", TipoEndereco.PRINCIPAL, p);
+//        EnderecoEntity e1 = new EnderecoEntity(null,p.getIdPessoa(), "Avenida Nova Resende", "28888888", 100, "Resende", TipoEndereco.PRINCIPAL, p);
 //
 //        enderecoRepository.save(e);
 //        enderecoRepository.save(e);

@@ -11,6 +11,8 @@ public class EnderecoDTO extends EnderecoCreateDTO {
     @Id
     private Integer idEndereco;
 
+    private Integer idPessoa;
+
     @NotNull
     private TipoEndereco tipoEndereco;
 

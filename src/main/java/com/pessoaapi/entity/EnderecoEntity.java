@@ -16,11 +16,12 @@ public class EnderecoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idEndereco;
+    
     @Column(name = "ID_PESSOA", insertable = false, updatable = false)
     private Integer idPessoa;
     private String logradouro;
 
-    private Integer cep;
+    private String cep;
 
     private Integer numero;
 
