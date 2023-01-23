@@ -2,8 +2,6 @@ package com.pessoaapi.config;
 
 import com.pessoaapi.entity.EnderecoEntity;
 import com.pessoaapi.entity.PessoaEntity;
-import com.pessoaapi.enums.TipoEndereco;
-import com.pessoaapi.repository.EnderecoRepository;
 import com.pessoaapi.repository.PessoaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -19,7 +17,6 @@ import java.util.Set;
 public class TestConfig implements CommandLineRunner {
 
     private final PessoaRepository pessoaRepository;
-    private final EnderecoRepository enderecoRepository;
 
 
     @Override
@@ -40,18 +37,6 @@ public class TestConfig implements CommandLineRunner {
 
         pessoaRepository.saveAll(Arrays.asList(p,p1,p2,p3,p4,p5,p6,p7,p8,p9));
 
-//        EnderecoEntity e = new EnderecoEntity(null,p.getIdPessoa(), "Rua Anita Garibaldi", "27777777", 300, "Resende", TipoEndereco.PRINCIPAL, p);
-//        EnderecoEntity e1 = new EnderecoEntity(null,p.getIdPessoa(), "Avenida Nova Resende", "28888888", 100, "Resende", TipoEndereco.PRINCIPAL, p);
-//
-//        enderecoRepository.save(e);
-//        enderecoRepository.save(e);
-//
-//        Set<EnderecoEntity> enderecosP = new HashSet<>();
-//        enderecosP.add(e);
-//        enderecosP.add(e1);
-//        p.setEnderecos(enderecosP);
-//
-//        pessoaRepository.save(p);
 
 
     }

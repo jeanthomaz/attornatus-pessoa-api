@@ -3,7 +3,6 @@ package com.pessoaapi.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pessoaapi.dto.EnderecoCreateDTO;
 import com.pessoaapi.dto.EnderecoDTO;
-import com.pessoaapi.dto.PessoaDTO;
 import com.pessoaapi.entity.EnderecoEntity;
 import com.pessoaapi.entity.PessoaEntity;
 import com.pessoaapi.enums.TipoEndereco;

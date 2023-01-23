@@ -1,12 +1,12 @@
 package com.pessoaapi.dto;
 
-import com.pessoaapi.entity.EnderecoEntity;
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.Set;
 
 @Data
 public class PessoaCreateDTO {

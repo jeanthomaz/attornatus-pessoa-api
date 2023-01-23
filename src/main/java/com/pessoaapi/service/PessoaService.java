@@ -20,7 +20,9 @@ public class PessoaService {
 
     public List<PessoaDTO> list(){
 
-        List<PessoaDTO> pessoaDTOS = pessoaRepository.findAll().stream().map(
+        List<PessoaEntity> pessoaEntities = pessoaRepository.findAll();
+
+        List<PessoaDTO> pessoaDTOS = pessoaEntities.stream().map(
                 pessoaEntity -> {
                     PessoaDTO pessoaDTO = objectMapper.convertValue(pessoaEntity, PessoaDTO.class);
                     return pessoaDTO;

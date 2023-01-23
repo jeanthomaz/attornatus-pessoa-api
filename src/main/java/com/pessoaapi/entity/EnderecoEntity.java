@@ -1,7 +1,6 @@
 package com.pessoaapi.entity;
 
 import com.pessoaapi.enums.TipoEndereco;
-import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,7 +15,7 @@ public class EnderecoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idEndereco;
-    
+
     @Column(name = "ID_PESSOA", insertable = false, updatable = false)
     private Integer idPessoa;
     private String logradouro;
@@ -32,7 +31,5 @@ public class EnderecoEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_pessoa", referencedColumnName = "id_pessoa")
     private PessoaEntity pessoa;
-
-
 
 }
